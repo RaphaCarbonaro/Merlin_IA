@@ -1,0 +1,5 @@
+ID_Transacao, Data, Descricao, Categoria, Tipo, Valor, Hobby_Relacionado, Mecanica_Financeira_Game, Sentimento_Usuario
+007,2025-10-11,Steam Purchase - Elden Ring,Lazer,Saida,250.00,Video-Games,Jogo Base (Compra Unica),Muito empolgado
+008,2025-10-12,LoL Riot Points,Lazer,Saida,80.00,Video-Games,Cosmetico/Skin,Arrependido (Impulso)
+009,2025-10-15,Upgrade Memoria RAM 16GB,Investimento Pessoal,Saida,320.00,Video-Games,Hardware/Setup,Satisfeito (Upgrade Duradouro)
+010,2025-10-18,Assinatura Xbox Game Pass,Lazer,Saida,50.00,Video-Games,Assinatura (Recorrente),Sentimento de Custo-Beneficio
