@@ -1,11 +1,15 @@
-data,descricao,categoria,valor,tipo
-2025-10-01,Salário,receita,5000.00,entrada
-2025-10-02,Aluguel,moradia,1200.00,saida
-2025-10-03,Supermercado,alimentacao,450.00,saida
-2025-10-05,Netflix,lazer,55.90,saida
-2025-10-07,Farmácia,saude,89.00,saida
-2025-10-10,Restaurante,alimentacao,120.00,saida
-2025-10-12,Uber,transporte,45.00,saida
-2025-10-15,Conta de Luz,moradia,180.00,saida
-2025-10-20,Academia,saude,99.00,saida
-2025-10-25,Combustível,transporte,250.00,saida
+ID_Transacao,Data,Descricao,Categoria,Valor,Tipo,Sentimento_Usuario,Hobby_Relacionado,Mecanica_Financeira_Game
+001,2025-10-01,Salário,receita,5000.00,entrada,,,
+002,2025-10-02,Aluguel,moradia,1200.00,saida,,,
+003,2025-10-03,Supermercado,alimentacao,450.00,saida,,,
+004,2025-10-05,Netflix,lazer,55.90,saida,,,
+005,2025-10-07,Farmácia,saude,89.00,saida,,,
+006,2025-10-10,Restaurante,alimentacao,120.00,saida,,,
+007,2025-10-12,Uber,transporte,45.00,saida,,,
+008,2025-10-15,Conta de Luz,moradia,180.00,saida,,,
+009,2025-10-20,Academia,saude,99.00,saida,,,
+010,2025-10-25,Combustível,transporte,250.00,saida,,,
+011,2025-10-26,Steam Purchase - Elden Ring,lazer,250.00,saida,Muito empolgado,Video-Games,Jogo Base (Compra Unica)
+012,2025-10-27,LoL Riot Points,lazer,80.00,saida,Arrependido,Video-Games,Cosmetico/Skin
+013,2025-10-28,Upgrade Memoria RAM 16GB,investimento pessoal,320.00,saida,Satisfeito,Video-Games,Hardware/Setup
+014,2025-10-29,Assinatura Xbox Game Pass,lazer,50.00,saida,Neutro,Video-Games,Assinatura (Recorrente)
