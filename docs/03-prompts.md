@@ -147,6 +147,4 @@ Essa é uma pergunta muito nobre, meu nobre aprendiz! No entanto, antes de apont
 ## Observações e Aprendizados
 
 > Registre aqui ajustes que você fez nos prompts e por quê.
-
-- [Observação 1]
-- [Observação 2]
+Fora adicionado uma nova regra no prompt para que o Merlin não fuja do assunto de finanças, pois durantes testes utilizando o Gemini como LLM, ao ser perguntado com assuntos fora do escopo, o mesmo respondeu.
