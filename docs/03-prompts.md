@@ -82,7 +82,7 @@ Meu jovem aprendiz.. vejo que durante o mês de outubro, sua maior despesa fora 
 
 **Usuário:**
 ```
-[ex: Qual a previsão do tempo para amanhã?]
+Qual a previsão do tempo para amanhã?
 ```
 
 **Agente:**
