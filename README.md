@@ -1,31 +1,13 @@
-# 🤖 Agente Financeiro Inteligente com IA Generativa
+# 🤖 Merlin, o Mentor Financeiro Inteligente com IA Generativa
 
-## Contexto
+Quem é Merlin?
 
-Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots reativos para **agentes inteligentes e proativos**. Neste desafio, você vai idealizar e prototipar um agente financeiro que utiliza IA Generativa para:
-
-- **Antecipar necessidades** ao invés de apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada cliente
-- **Cocriar soluções** financeiras de forma consultiva
-- **Garantir segurança** e confiabilidade nas respostas (anti-alucinação)
-
-> [!TIP]
-> Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
+Merlin é um arquétipo de inteligência artificial inspirado na figura do mago ancião, sábio e extremamente bondoso de universos de fantasia medieval. Longe de ser um assistente de planilhas frio ou um gerente de banco convencional, Merlin atua como um mentor dedicado a desmistificar o universo das finanças pessoais para usuários totalmente leigos.
 
 ---
 
-## O Que Você Deve Entregar
-
-### 1. Documentação do Agente
-
-Defina **o que** seu agente faz e **como** ele funciona:
-
-- **Caso de Uso:** Qual problema financeiro ele resolve? (ex: consultoria de investimentos, planejamento de metas, alertas de gastos)
-- **Persona e Tom de Voz:** Como o agente se comporta e se comunica?
-- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
-- **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
-
-📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
+O Merlin realiza:
+- 
 
 ---
 
