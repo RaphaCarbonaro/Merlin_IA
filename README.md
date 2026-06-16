@@ -1,131 +1,107 @@
-# 🤖 Merlin, o Mentor Financeiro Inteligente com IA Generativa
+# 🤖 Merlin, o Mago das Finanças Inteligente com IA Generativa
 
 Quem é Merlin?
 
-Merlin é um arquétipo de inteligência artificial inspirado na figura do mago ancião, sábio e extremamente bondoso de universos de fantasia medieval. Longe de ser um assistente de planilhas frio ou um gerente de banco convencional, Merlin atua como um mentor dedicado a desmistificar o universo das finanças pessoais para usuários totalmente leigos.
+Merlin é um arquétipo de inteligência artificial inspirado na figura do mago ancião, sábio e extremamente bondoso de universos de fantasia medieval. Longe de ser um assistente de planilhas frio ou um gerente de banco convencional, Merlin atua como um mentor dedicado a desmistificar o universo das finanças pessoais para os usuários.
 
 ---
 
 O Merlin realiza:
-- 
+- Análise e explica conceitos financeiros.
+- Usa exemplos práticos para a explicação de conceitos financeiros.
+- Auxilia no desenho estratégico e no progresso de objetivos de curto, médio e longo prazo.
+- Examina e categoriza registros financeiros do usuário.
+- Desmistifica termos técnicos do mercado financeiro
 
+Merlin NÃO realiza:
+- NÃO faz recomendações de investimentos.
+- NÃO acessa dados bancários sensíveis (senhas, etc).
+- Não substitui um profissional certificado.
 ---
 
-### 2. Base de Conhecimento
+## Arquitetura
 
-Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alimentar seu agente:
+### Diagrama
 
-| Arquivo | Formato | Descrição |
-|---------|---------|-----------|
-| `transacoes.csv` | CSV | Histórico de transações do cliente |
-| `historico_atendimento.csv` | CSV | Histórico de atendimentos anteriores |
-| `perfil_investidor.json` | JSON | Perfil e preferências do cliente |
-| `produtos_financeiros.json` | JSON | Produtos e serviços disponíveis |
-
-Você pode adaptar ou expandir esses dados conforme seu caso de uso.
-
-📄 **Template:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
-
----
-
-### 3. Prompts do Agente
-
-Documente os prompts que definem o comportamento do seu agente:
-
-- **System Prompt:** Instruções gerais de comportamento e restrições
-- **Exemplos de Interação:** Cenários de uso com entrada e saída esperada
-- **Tratamento de Edge Cases:** Como o agente lida com situações limite
-
-📄 **Template:** [`docs/03-prompts.md`](./docs/03-prompts.md)
-
----
-
-### 4. Aplicação Funcional
-
-Desenvolva um **protótipo funcional** do seu agente:
-
-- Chatbot interativo (sugestão: Streamlit, Gradio ou similar)
-- Integração com LLM (via API ou modelo local)
-- Conexão com a base de conhecimento
-
-📁 **Pasta:** [`src/`](./src/)
-
----
-
-### 5. Avaliação e Métricas
-
-Descreva como você avalia a qualidade do seu agente:
-
-**Métricas Sugeridas:**
-- Precisão/assertividade das respostas
-- Taxa de respostas seguras (sem alucinações)
-- Coerência com o perfil do cliente
-
-📄 **Template:** [`docs/04-metricas.md`](./docs/04-metricas.md)
-
----
-
-### 6. Pitch
-
-Grave um **pitch de 3 minutos** (estilo elevador) apresentando:
-
-- Qual problema seu agente resolve?
-- Como ele funciona na prática?
-- Por que essa solução é inovadora?
-
-📄 **Template:** [`docs/05-pitch.md`](./docs/05-pitch.md)
-
----
-
-## Ferramentas Sugeridas
-
-Todas as ferramentas abaixo possuem versões gratuitas:
-
-| Categoria | Ferramentas |
-|-----------|-------------|
-| **LLMs** | [ChatGPT](https://chat.openai.com/), [Copilot](https://copilot.microsoft.com/), [Gemini](https://gemini.google.com/), [Claude](https://claude.ai/), [Ollama](https://ollama.ai/) |
-| **Desenvolvimento** | [Streamlit](https://streamlit.io/), [Gradio](https://www.gradio.app/), [Google Colab](https://colab.research.google.com/) |
-| **Orquestração** | [LangChain](https://www.langchain.com/), [LangFlow](https://www.langflow.org/), [CrewAI](https://www.crewai.com/) |
-| **Diagramas** | [Mermaid](https://mermaid.js.org/), [Draw.io](https://app.diagrams.net/), [Excalidraw](https://excalidraw.com/) |
-
----
-
-## Estrutura do Repositório
-
-```
-📁 lab-agente-financeiro/
-│
-├── 📄 README.md
-│
-├── 📁 data/                          # Dados mockados para o agente
-│   ├── historico_atendimento.csv     # Histórico de atendimentos (CSV)
-│   ├── perfil_investidor.json        # Perfil do cliente (JSON)
-│   ├── produtos_financeiros.json     # Produtos disponíveis (JSON)
-│   └── transacoes.csv                # Histórico de transações (CSV)
-│
-├── 📁 docs/                          # Documentação do projeto
-│   ├── 01-documentacao-agente.md     # Caso de uso e arquitetura
-│   ├── 02-base-conhecimento.md       # Estratégia de dados
-│   ├── 03-prompts.md                 # Engenharia de prompts
-│   ├── 04-metricas.md                # Avaliação e métricas
-│   └── 05-pitch.md                   # Roteiro do pitch
-│
-├── 📁 src/                           # Código da aplicação
-│   └── app.py                        # (exemplo de estrutura)
-│
-├── 📁 assets/                        # Imagens e diagramas
-│   └── ...
-│
-└── 📁 examples/                      # Referências e exemplos
-    └── README.md
+```mermaid
+flowchart TD
+    A[Cliente] -->|Mensagem| B[Interface]
+    B --> C[LLM]
+    C --> D[Base de Conhecimento]
+    D --> C
+    C --> E[Validação]
+    E --> F[Resposta]
 ```
 
----
+### Componentes
 
-## Dicas Finais
+| Componente | Descrição |
+|------------|-----------|
+| Interface | Streamlit |
+| LLM | Ollama (modelo local `gpt-oss`) |
+| Base de Conhecimento | JSON/CSV |
 
-1. **Comece pelo prompt:** Um bom system prompt é a base de um agente eficaz
-2. **Use os dados mockados:** Eles garantem consistência e evitam problemas com dados sensíveis
-3. **Foque na segurança:** No setor financeiro, evitar alucinações é crítico
-4. **Teste cenários reais:** Simule perguntas que um cliente faria de verdade
-5. **Seja direto no pitch:** 3 minutos passam rápido, vá ao ponto
+## 📁 Estrutura do Projeto
+
+```
+├── data/                          # Base de conhecimento
+│   ├── perfil_investidor.json     # Perfil do cliente
+│   ├── transacoes.csv             # Histórico financeiro
+│   ├── historico_atendimento.csv  # Interações anteriores
+│   └── produtos_financeiros.json  # Produtos para ensino
+│
+├── docs/                          # Documentação completa
+│   ├── 01-documentacao-agente.md  # Caso de uso e persona
+│   ├── 02-base-conhecimento.md    # Estratégia de dados
+│   ├── 03-prompts.md              # System prompt e exemplos
+│   ├── 04-metricas.md             # Avaliação de qualidade
+│   └── 05-pitch.md                # Apresentação do projeto
+│
+└── src/
+    └── app.py                     # Aplicação Streamlit
+```
+
+## Passo a Passo da Execução
+
+### 1. Instalar Ollama
+
+```bash
+# Baixar em: ollama.com
+ollama pull gpt-oss
+ollama serve
+```
+
+### 2. Instalar Dependências
+
+```bash
+pip install streamlit pandas requests
+```
+
+### 3. Rodar o Merlin
+
+```bash
+python -m streamlit run src/app.py
+```
+
+## Exemplos de uso
+<img width="667" height="539" alt="image" src="https://github.com/user-attachments/assets/d4a021d1-3e67-49cb-aa04-98fb5fb78d72" />
+<img width="630" height="654" alt="image" src="https://github.com/user-attachments/assets/2747d74e-a500-4cf5-b4b0-21f4842720b3" />
+
+## Métricas de Avaliação
+
+| Métrica | Objetivo |
+|---------|----------|
+| **Assertividade** | O agente responde o que foi perguntado? |
+| **Segurança** | Evita inventar informações (anti-alucinação)? |
+| **Coerência** | A resposta é adequada ao perfil do cliente? |
+
+## Diferenciais
+
+- **Personalização:** Usa os dados do próprio cliente nos exemplos
+- **100% Local:** Roda com Ollama, sem enviar dados para APIs externas
+- **Educativo:** Foco em ensinar, não em vender produtos
+- **Seguro:** Estratégias de anti-alucinação documentadas
+
+## 📝 Documentação Completa
+
+Toda a documentação técnica, estratégias de prompt e casos de teste estão disponíveis na pasta [`docs/`](./docs/).
