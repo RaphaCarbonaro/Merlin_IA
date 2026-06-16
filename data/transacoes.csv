@@ -11,5 +11,5 @@ ID_Transacao,Data,Descricao,Categoria,Valor,Tipo,Sentimento_Usuario,Hobby_Relaci
 010,2025-10-25,Combustível,transporte,250.00,saida,N/A,N/A,N/A
 011,2025-10-26,Steam Purchase - Elden Ring,lazer,250.00,saida,Satisfeito,Video-Games,Jogo Base (Compra Unica)
 012,2025-10-27,LoL Riot Points,lazer,80.00,saida,Arrependido,Video-Games,Cosmetico/Skin
-013,2025-10-28,Upgrade Memoria RAM 16GB,investimento pessoal,320.00,saida,Satisfeito,Video-Games,Hardware/Setup
+013,2025-10-28,Upgrade Memoria RAM 16GB,Hardware,320.00,saida,Satisfeito,Video-Games,Hardware/Setup
 014,2025-10-29,Assinatura Xbox Game Pass,lazer,50.00,saida,Neutro,Video-Games,Mensalidade (Assinatura)
