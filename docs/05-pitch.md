@@ -3,7 +3,7 @@
 ## Roteiro Sugerido
 
 ### 1. O Problema (30 seg)
-> Qual dor do cliente você resolve?
+
 ""Boa tarde! Você já sentiu aquele frio na barriga ou até um sentimento de culpa ao abrir o aplicativo do banco e tentar entender esse mundo que gira entorno do seu dinheiro? Essa é a realidade de milhões de brasileirosem finanças. O mercado financeiro atual fala uma língua fria, técnica e cheia de siglas incompreensíveis como CDI ou Selic. Esse distanciamento gera ansiedade, medo do julgamento e, o pior de tudo: paralisa as pessoas na hora de cuidar do próprio bolso e planejar o futuro"
 
 ### 2. A Solução (1 min)
