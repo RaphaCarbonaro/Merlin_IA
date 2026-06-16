@@ -13,28 +13,27 @@
 
 ## Adaptações nos Dados
 
-> Você modificou ou expandiu os dados mockados? Descreva aqui.
+Adaptações no arquivo `transacoes.csv`:
 
-- Expansão de Colunas (Estrutura): Adicionado novas dimensões para enriquecer o contexto analítico da IA:
+  - Expansão de Colunas (Estrutura): Adicionado novas dimensões para enriquecer o contexto analítico da IA:
 
-- ID_Transacao: Para identificação única de cada registro.
+  - ID_Transacao: Para identificação única de cada registro.
 
-- Sentimento_Usuario: Atributo psicológico/comportamental para apoiar uma abordagem empática da persona.
+  - Sentimento_Usuario: Atributo psicológico/comportamental para apoiar uma abordagem empática da persona.
 
-- Hobby_Relacionado e Mecanica_Financeira: Atributos focados no nicho dos gastos, permitindo à IA identificar gastos específicos desse setor.
+  - Hobby_Relacionado e Mecanica_Financeira: Atributos focados no nicho dos gastos, permitindo à IA identificar gastos específicos desse setor.
 
-- Expansão de Linhas (Volume): Adicionamos novas transações fictícias no final do mês focadas no hobby de jogos para testar a capacidade de segmentação e engajamento do consultor financeiro.
+  - Expansão de Linhas (Volume): Adicionamos novas transações fictícias no final do mês focadas no hobby de jogos para testar a capacidade de segmentação e engajamento do consultor financeiro.
 
-- Padronização: Aplicamos o valor "N/A" para as linhas e colunas que não tinham relação com o hobby, garantindo consistência e evitando campos nulos na leitura dos dados.
+  - Padronização: Aplicamos o valor "N/A" para as linhas e colunas que não tinham relação com o hobby, garantindo consistência e evitando campos nulos na leitura dos dados.
   
-- Adicionado nova meta no arquivo `perfil_investidor.json`.
+Adicionado nova meta no arquivo `perfil_investidor.json`.
 
 ---
 
 ## Estratégia de Integração
 
 ### Como os dados são carregados?
-> Descreva como seu agente acessa a base de conhecimento.
 
 ```python
 import pandas as pd
@@ -47,7 +46,6 @@ produtos = json.load(open('./data/produtos_financeiros.json'))
 ```
 
 ### Como os dados são usados no prompt?
-> Os dados vão no system prompt? São consultados dinamicamente?
 
 Para fins de simplificação, os dados foram inseridos diretamente (hardcoded) no corpo do prompt, assegurando que o Agente disponha do contexto ideal para a execução.
 
@@ -155,8 +153,6 @@ PRODUTOS DISPONIVEIS PARA ENSINO (data/produtos_financeiros.json):
 ---
 
 ## Exemplo de Contexto Montado
-
-> Mostre um exemplo de como os dados são formatados para o agente.
 
 Contexto criado e montado, através dos dados fornecidos pela base de conhecimento.
 
