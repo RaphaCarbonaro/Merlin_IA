@@ -16,7 +16,9 @@ Ele não é um só um robô de planilhas frio ou um gerente de banco tentando te
 "Será demonstrado através de um video um exemplo de utilização do Merlin."
 
 ### 4. Diferencial e Impacto (30 seg)
+
 "O grande diferencial do Merlin é a união da inteligência de dados com a psicologia do acolhimento e acessibilidade com exemplos que transformam o "economiquês" em algo facil de entender. Nós removemos a barreira da vergonha que impede o usuário de aprender. O impacto disso na sociedade é a real democratização da educação financeira nas pessoas. Transformando o medo do dinheiro em autonomia, ensinando as pessoas a dominarem suas próprias finanças de forma segura, privada e humanizada. Com o Merlin, o mundo das finanças deixa de ser uma floresta sombria e se torna uma jornada de prosperidade!"
+
 ---
 
 ## Checklist do Pitch
