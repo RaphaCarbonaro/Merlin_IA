@@ -33,3 +33,4 @@ Ele não é um só um robô de planilhas frio ou um gerente de banco tentando te
 
 ## Link do Vídeo
 
+https://drive.google.com/file/d/1JLckfaIWwu5kVd8M1soZ3MEgiKgdxUGw/view?usp=sharing
